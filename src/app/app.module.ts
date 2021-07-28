@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { Injector, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { Formio, FormioModule, FormioAppConfig } from '@formio/angular';
+import { Formio, FormioModule, FormioAppConfig, Templates } from '@formio/angular';
 // import premium from '@formio/premium';
 // Formio.use(premium);
 import { FormioGrid } from '@formio/angular/grid';
@@ -14,6 +15,9 @@ import { AppConfig } from './config';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DataComponent } from './data/data.component';
+import { FormsModule } from '@angular/forms';
+
+//import customTemplate from './rating-wrapper/custom-template';
 
 // Make sure we use fontawesome everywhere in Form.io renderers.
 (Formio as any).icons = 'fontawesome';
@@ -34,6 +38,8 @@ import { DataComponent } from './data/data.component';
     CommonModule,
     FormioModule,
     FormioGrid,
+    FormsModule,
+    NgbModule,
     RouterModule.forRoot([
       {
         path: '',
