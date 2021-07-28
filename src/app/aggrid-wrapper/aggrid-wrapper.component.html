@@ -1,0 +1,8 @@
+<div>Grid</div>
+<ag-grid-angular #aggrid
+    style="width: 500px; height: 200px;" 
+    class="ag-theme-alpine table table-bordered table-striped table-hover"
+    [rowData]="rowData"
+    (gridReady) ="onGridReady($event)"
+    [gridOptions]="gridOptions">
+</ag-grid-angular>

@@ -1,0 +1,36 @@
+{
+        "_id" : ObjectId("607eb8c24719e6ecddcba558"),
+        "description" : "A role for Administrative Users.",
+        "deleted" : null,
+        "default" : false,
+        "admin" : true,
+        "title" : "Administrator",
+        "machineName" : "administrator",
+        "created" : ISODate("2021-04-20T11:19:31.014Z"),
+        "modified" : ISODate("2021-04-20T11:19:31.203Z"),
+        "__v" : 0
+}
+{
+        "_id" : ObjectId("607eb8c34719e64f59cba559"),
+        "description" : "A role for Authenticated Users.",
+        "deleted" : null,
+        "default" : false,
+        "admin" : false,
+        "title" : "Authenticated",
+        "machineName" : "authenticated",
+        "created" : ISODate("2021-04-20T11:19:31.360Z"),
+        "modified" : ISODate("2021-04-20T11:19:31.406Z"),
+        "__v" : 0
+}
+{
+        "_id" : ObjectId("607eb8c34719e6ecdfcba55a"),
+        "description" : "A role for Anonymous Users.",
+        "deleted" : null,
+        "default" : true,
+        "admin" : false,
+        "title" : "Anonymous",
+        "machineName" : "anonymous",
+        "created" : ISODate("2021-04-20T11:19:31.515Z"),
+        "modified" : ISODate("2021-04-20T11:19:31.540Z"),
+        "__v" : 0
+}

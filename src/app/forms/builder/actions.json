@@ -1,0 +1,163 @@
+{
+    "_id" : ObjectId("607eb8c44719e66492cba55f"),
+    "handler" : [
+            "before"
+    ],
+    "method" : [
+            "create",
+            "update"
+    ],
+    "priority" : 10,
+    "deleted" : null,
+    "title" : "Save Submission",
+    "name" : "save",
+    "form" : ObjectId("607eb8c34719e66816cba55b"),
+    "machineName" : "userSave",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607eb8c44719e68681cba560"),
+    "handler" : [
+            "before"
+    ],
+    "method" : [
+            "create",
+            "update"
+    ],
+    "priority" : 10,
+    "deleted" : null,
+    "title" : "Save Submission",
+    "name" : "save",
+    "form" : ObjectId("607eb8c34719e62b4fcba55c"),
+    "machineName" : "adminSave",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607eb8c44719e6c0fbcba561"),
+    "handler" : [
+            "before"
+    ],
+    "method" : [
+            "create"
+    ],
+    "priority" : 2,
+    "deleted" : null,
+    "name" : "login",
+    "title" : "Login",
+    "form" : ObjectId("607eb8c44719e6baa8cba55d"),
+    "settings" : {
+            "resources" : [
+                    "607eb8c34719e66816cba55b",
+                    "607eb8c34719e62b4fcba55c"
+            ],
+            "username" : "email",
+            "password" : "password"
+    },
+    "machineName" : "userLogin",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607eb8c44719e68a61cba562"),
+    "handler" : [
+            "before"
+    ],
+    "method" : [
+            "create"
+    ],
+    "priority" : 11,
+    "deleted" : null,
+    "title" : "Save Submission",
+    "name" : "save",
+    "form" : ObjectId("607eb8c44719e650e1cba55e"),
+    "settings" : {
+            "resource" : "607eb8c34719e66816cba55b",
+            "fields" : {
+                    "email" : "email",
+                    "password" : "password"
+            }
+    },
+    "machineName" : "userRegisterSave",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607eb8c44719e636ddcba563"),
+    "handler" : [
+            "before"
+    ],
+    "method" : [
+            "create"
+    ],
+    "priority" : 2,
+    "deleted" : null,
+    "name" : "login",
+    "title" : "Login",
+    "form" : ObjectId("607eb8c44719e650e1cba55e"),
+    "settings" : {
+            "resources" : [
+                    "607eb8c34719e66816cba55b"
+            ],
+            "username" : "email",
+            "password" : "password"
+    },
+    "machineName" : "userRegisterLogin",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607eb8c44719e6893bcba564"),
+    "handler" : [
+            "after"
+    ],
+    "method" : [
+            "create"
+    ],
+    "priority" : 1,
+    "deleted" : null,
+    "name" : "role",
+    "title" : "Role Assignment",
+    "form" : ObjectId("607eb8c34719e66816cba55b"),
+    "settings" : {
+            "role" : "607eb8c34719e64f59cba559",
+            "type" : "add",
+            "association" : "new"
+    },
+    "machineName" : "authenticatedRole",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607eb8c44719e6d6b1cba565"),
+    "handler" : [
+            "after"
+    ],
+    "method" : [
+            "create"
+    ],
+    "priority" : 1,
+    "deleted" : null,
+    "name" : "role",
+    "title" : "Role Assignment",
+    "form" : ObjectId("607eb8c34719e62b4fcba55c"),
+    "settings" : {
+            "role" : "607eb8c24719e6ecddcba558",
+            "type" : "add",
+            "association" : "new"
+    },
+    "machineName" : "adminRole",
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("607ebbf24719e63968cba56a"),
+    "handler" : [
+            "before"
+    ],
+    "method" : [
+            "create",
+            "update"
+    ],
+    "priority" : 10,
+    "deleted" : null,
+    "name" : "save",
+    "title" : "Save Submission",
+    "form" : ObjectId("607ebbf24719e64d04cba569"),
+    "machineName" : "profile:save",
+    "__v" : 0
+}

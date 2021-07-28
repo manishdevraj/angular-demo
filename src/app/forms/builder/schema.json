@@ -1,0 +1,86 @@
+{
+        "components": [
+                {
+                        "title": "General",
+                        "collapsible": false,
+                        "key": "general",
+                        "type": "panel",
+                        "label": "Panel",
+                        "input": false,
+                        "tableView": false,
+                        "components": [
+                                {
+                                        "label": "Age",
+                                        "mask": false,
+                                        "spellcheck": true,
+                                        "tableView": false,
+                                        "delimiter": false,
+                                        "requireDecimal": false,
+                                        "inputFormat": "plain",
+                                        "key": "age",
+                                        "type": "number",
+                                        "input": true
+                                },
+                                {
+                                        "label": "First Name",
+                                        "tableView": true,
+                                        "key": "firstName",
+                                        "type": "textfield",
+                                        "input": true
+                                }
+                        ]
+                },
+                {
+                        "title": "Experience",
+                        "collapsible": false,
+                        "key": "experience",
+                        "type": "panel",
+                        "label": "Panel",
+                        "input": false,
+                        "tableView": false,
+                        "components": [
+                                {
+                                        "label": "No of years of experience",
+                                        "optionsLabelPosition": "right",
+                                        "inline": true,
+                                        "tableView": false,
+                                        "defaultValue": {
+                                                "3": false,
+                                                "8": false,
+                                                "10": false,
+                                                "": false
+                                        },
+                                        "values": [
+                                                {
+                                                        "label": "3+",
+                                                        "value": "3",
+                                                        "shortcut": ""
+                                                },
+                                                {
+                                                        "label": "8+",
+                                                        "value": "8",
+                                                        "shortcut": ""
+                                                },
+                                                {
+                                                        "label": "10+",
+                                                        "value": "10",
+                                                        "shortcut": ""
+                                                }
+                                        ],
+                                        "key": "noOfYearsOfExperience",
+                                        "type": "selectboxes",
+                                        "input": true,
+                                        "inputType": "checkbox"
+                                }
+                        ]
+                },
+                {
+                        "type": "button",
+                        "label": "Submit",
+                        "key": "submit",
+                        "disableOnInvalid": true,
+                        "input": true,
+                        "tableView": false
+                }
+        ]
+}

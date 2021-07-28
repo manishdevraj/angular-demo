@@ -1,0 +1,18 @@
+{
+    "_id" : ObjectId("607eb8c54719e667a0cba566"),
+    "owner" : ObjectId("607eb8c54719e667a0cba566"),
+    "deleted" : null,
+    "roles" : [
+            ObjectId("607eb8c24719e6ecddcba558")
+    ],
+    "form" : ObjectId("607eb8c34719e62b4fcba55c"),
+    "data" : {
+            "email" : "admin@example.com",
+            "password" : "$2a$10$RxdCXv6igmUyIk3vnNsDYulFbZiQ90Cp02wO.m7mp2jcVUJBKQlCy"
+    },
+    "access" : [ ],
+    "externalIds" : [ ],
+    "created" : ISODate("2021-04-20T11:19:33.770Z"),
+    "modified" : ISODate("2021-04-20T11:19:33.775Z"),
+    "__v" : 0
+}
