@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FORMS } from '../forms.index';
+import { FORMS } from '../formsx.index';
 
 @Component({
   selector: 'app-forms',

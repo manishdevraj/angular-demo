@@ -11,13 +11,17 @@ import { RendererComponent } from './renderer/renderer.component';
 import { SimpleComponent } from './simple/simple.component';
 import { WizardComponent } from './wizard/wizard.component';
 import { FormsComponent } from './forms/forms.component';
-import { FORMS } from './forms.index';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FORMS } from './formsx.index';
+import { NgbDateParserFormatter, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { RatingWrapperComponent } from '../rating-wrapper/rating-wrapper.component';
 import { AggridWrapperComponent } from '../aggrid-wrapper/aggrid-wrapper.component';
+import { DatepickerWrapperComponent } from '../datepicker-wrapper/datepicker-wrapper.component';
+import { CustomDateParserFormatter } from '../datepicker-wrapper/custom-date-parser-formatter';
 import { AgGridModule } from 'ag-grid-angular';
 import { registerAgGridComponent} from '../aggrid-wrapper/aggrid-wrapper.formio'
 import { registerRatingComponent } from '../rating-wrapper/rating-wrapper.formio';
+import { registerDatePickerComponent } from '../datepicker-wrapper/datepicker-wrapper.formio';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Make sure we use fontawesome everywhere in Form.io renderers.
 (Formio as any).icons = 'fontawesome';
 
@@ -25,6 +29,8 @@ import { registerRatingComponent } from '../rating-wrapper/rating-wrapper.formio
   imports: [
     CommonModule,
     FormioModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     AgGridModule.withComponents([]),
     RouterModule.forChild([{
@@ -44,15 +50,21 @@ import { registerRatingComponent } from '../rating-wrapper/rating-wrapper.formio
     WizardComponent,
     FormsComponent,
     RatingWrapperComponent,
-    AggridWrapperComponent
+    AggridWrapperComponent,
+    DatepickerWrapperComponent
+  ],
+  providers: [
+    {provide: NgbDateParserFormatter, useClass: CustomDateParserFormatter}
   ],
   bootstrap: [
-    FormsComponent
+    FormsComponent,
+    DatepickerWrapperComponent
   ]
 })
-export class FormsModule { 
+export class FormsxModule { 
   constructor(injector: Injector) {
     registerAgGridComponent(injector);
     registerRatingComponent(injector);
+    registerDatePickerComponent(injector);
   }
 }

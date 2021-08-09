@@ -51,7 +51,7 @@ import { FormsModule } from '@angular/forms';
       },
       {
         path: 'forms',
-        loadChildren: () => import('./forms/forms.module').then(m => m.FormsModule)
+        loadChildren: () => import('./forms/formsx.module').then(m => m.FormsxModule)
       },
       {
         path: 'auth',
